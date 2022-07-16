@@ -18,7 +18,7 @@ export class TablaUsuariosComponent implements OnInit {
     this.getUsers();
   }
   getUsers(){
-    let data = this.apiService.getUsers('/users').subscribe(response =>{
+    let data:any = this.apiService.getUsers('/users').subscribe(response =>{
       console.log(response)
       this.users = response.data;
     });

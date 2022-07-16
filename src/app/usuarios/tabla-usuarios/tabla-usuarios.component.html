@@ -1,0 +1,19 @@
+<p>tabla-usuarios works!</p>
+
+<div>
+    <div class="grid grid-cols-4 gap-1 p-1" *ngFor="let user of users">
+        <p>Nombre</p>
+        <p>Fecha de nacimiento</p>
+        <p>Edad</p>
+        <p>Dirección</p>
+    </div>
+    <div class="h-96 overflow-scroll">
+        <div class="grid grid-cols-4 gap-1 p-1" *ngFor="let user of users">
+            <p>{{user.name}}</p>
+            <p>{{user.fecha_naciemiento}}</p>
+            <p>{{user.age}}</p>
+            <p>{{user.addres.domicilio}}  {{user.addres.numero_exterior}} {{user.addres.cp}} {{user.addres.colonia}} {{user.addres.ciudad}}</p>
+        </div>
+    </div>
+    
+</div> 
